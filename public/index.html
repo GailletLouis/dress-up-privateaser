@@ -2,22 +2,30 @@
 <html>
   <head>
     <title>CSS/HTML Workshop with Privateaser</title>
+	<link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div id="bar">
-      <input class="js-name" type="text" placeholder="Bar name"/>
-      <input class="js-price-by-hour" type="number" placeholder="Price by hour"/>
-      <input class="js-price-by-person" type="number" placeholder="Price by person"/>
-    </div>
-    <div id="booker">
-      <input class="js-name" type="text" placeholder="Booker name"/>
-      <input class="js-time" type="number" placeholder="Time in h"/>
-      <input class="js-persons" type="number" placeholder="Persons"/>
-      <input class="js-option" type="checkbox" placeholder="Deductible option"/>
-    </div>
-    <button id="compute">Compute</button>
-    <div id="actors"></div>
-    <script src="privateaser.js"></script>
-    <script src="index.js"></script>
+	<div id="entries">
+		<div id="bar" class="entry">
+		  <input class="js-name" type="text" placeholder="Bar name"/>
+		  <input class="js-price-by-hour" type="number" placeholder="Price by hour"/>
+		  <input class="js-price-by-person" type="number" placeholder="Price by person"/>
+		</div>
+		<div id="booker" class="entry">
+		  <input class="js-name" type="text" placeholder="Booker name"/>
+		  <input class="js-time" type="number" placeholder="Time in h"/>
+		  <input class="js-persons" type="number" placeholder="Persons"/>
+		</div>
+		<div id="commission">
+			<text>Commission</text>
+			<input class="js-option" type="checkbox" placeholder="Deductible option"/>
+		</div>
+		<button id="compute" class="myButton">Compute</button>
+	</div>
+	<div id="results">
+		<div id="actors"></div>
+		<script src="privateaser.js"></script>
+		<script src="index.js"></script>
+	</div>
   </body>
 </html>
